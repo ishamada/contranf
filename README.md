@@ -1,2 +1,2 @@
-# contranf
+# contranf nextflow pipeline
 # ** Test Me **
