@@ -1,4 +1,4 @@
-# Dockerfile for CONTRA ver 2:0 # Author:islam.salah@gmail.com
+# Dockerfile for CONTRA Dev ver 2:0 # Author:islam.salah@gmail.com
 # Use Debian as the base image
 # FROM debian:latest
 FROM debian:bullseye-slim
