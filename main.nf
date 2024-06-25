@@ -1,9 +1,10 @@
 #!/usr/bin/env nextflow
+// Dev version 2.1 #
 // pipeline input parameters
-params.target = "/home/islam/contra-data/0247401_D_BED_20090724_hg19_MERGED.bed"
-params.sample = "/home/islam/contra-data/P0667T_GATKrealigned_duplicates_marked.bam"
-params.control = "/home/islam/contra-data/P0667N_GATKrealigned_duplicates_marked.bam"
-params.reference = "/home/islam/contra-data/human_g1k_v37.fasta"
+params.target = "/home/islam/contra-test-data/0247401_D_BED_20090724_hg19_MERGED.bed"
+params.sample = "/home/islam/contra-test-data/P0667T_GATKrealigned_duplicates_marked.bam"
+params.control = "/home/islam/contra-test-data/P0667N_GATKrealigned_duplicates_marked.bam"
+params.reference = "/home/islam/contra-test-data/human_g1k_v37.fasta"
 params.output_dir = "results"
 
 log.info """\

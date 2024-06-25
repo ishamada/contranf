@@ -53,7 +53,7 @@ RUN wget https://github.com/arq5x/bedtools2/releases/download/v2.30.0/bedtools-2
 # Set the working directory
 WORKDIR /contra
 
-COPY . .
+# COPY . .
 
 # Set the entrypoint to samtools
 # ENTRYPOINT ["samtools"]
