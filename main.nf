@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// Dev version 2.1 #
+// Dev version 2.1 # Author:islam.salah@gmail.com
 // pipeline input parameters
 params.target = "/home/islam/contra-test-data/0247401_D_BED_20090724_hg19_MERGED.bed"
 params.sample = "/home/islam/contra-test-data/P0667T_GATKrealigned_duplicates_marked.bam"
