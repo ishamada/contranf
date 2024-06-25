@@ -14,16 +14,21 @@ CONTRA-NF is a nextflow pipeline to run CONTRA tool for copy number variation (C
 ## --target
 
 Target region definition file [BED format]
+
 ## --sample
 
 Alignment file for the test sample [BAM/SAM]
+
 ## --control 
+
 Alignment file for the control sample [BAM/SAM/BED* – baseline file]
 
 *bed option has to be supplied for control with baseline file.
+
 ## --reference
 
 Reference genome [FASTA]
+
 ## --output_dir
 
 the folder name (and its path) to store the output of the analysis (this new folder will be created – error message occur if the folder exists)
