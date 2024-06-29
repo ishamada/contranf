@@ -35,6 +35,7 @@ process CONTRA {
 
     output:
     path "${params.output_dir}"
+    // path output_dir
 
     script:
     """
