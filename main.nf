@@ -21,7 +21,7 @@ process CONTRA {
     publishDir params.output_dir, mode: 'copy'
 
     input:
-    path "$params.target"
+    path target
 
     output:
     path "$params.output_dir"
@@ -29,7 +29,7 @@ process CONTRA {
 
     script:
     """
-    python /contra/contra.py -t $params.target -s $params.sample -c $params.control -f $params.reference -o $params.output_dir
+    python /contra/contra.py -t $target -s $params.sample -c $params.control -f $params.reference -o $params.output_dir
     """
 }
 
@@ -38,5 +38,5 @@ workflow {
 }
 
 workflow.onComplete {
-    log.info ( workflow.success ? "\nDone! Check the results of CONTRA --> $params.output_dir/\n" : "Oops .. something went wrong" )
+    log.info ( workflow.success ? "\nDone! Check the results of CONTRA > $params.output_dir/\n" : "Oops .. something went wrong" )
 }
