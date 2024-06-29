@@ -1,3 +1,3 @@
-sudo rm -r .nextflow/ work/ output/ results/
-sudo rm .nextflow.log
-sudo rm .nextflow.log.*
+sudo rm -r -f .nextflow/ work/ output/ results/
+sudo rm -f .nextflow.log
+sudo rm -f .nextflow.log.*
