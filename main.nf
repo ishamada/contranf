@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// Dev version 2.2 # Author:islam.salah@gmail.com
+// Dev version 2.3 # Author:islam.salah@gmail.com
 
 // pipeline input parameters
 params.target = "/home/islam/contra-test-data/0247401_D_BED_20090724_hg19_MERGED.bed"
@@ -134,7 +134,6 @@ process CONTRA {
 }
 
 /*  --bed ${params.bed} \
-
 */   
 
 workflow {
