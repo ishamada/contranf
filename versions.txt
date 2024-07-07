@@ -1,0 +1,16 @@
+version 1.1
+===========
+
+1- Add optional parameters 
+
+
+version 1.2
+===========
+
+1- add validation process in python
+2- add samplesheet.csv file
+
+version 1.3
+===========
+
+
