@@ -15,8 +15,15 @@ RUN apt-get update && apt-get install -y \
     libssl-dev \
     libreadline-dev \
     libsqlite3-dev \
+    libcurl4-openssl-dev \
+    libxml2-dev \
+    libssl-dev \
     r-base \
     && rm -rf /var/lib/apt/lists/*
+
+# Install Bioconductor and DNAcopy package
+RUN R -e "install.packages('BiocManager')"
+RUN R -e "BiocManager::install('DNAcopy')"
 
 # Install Python 2.7
 RUN wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz \
