@@ -1,0 +1,6 @@
+param,path
+target,/home/your-path/file_with_bed_extention.bed
+sample,/home/your-path/file_with_bam_extention.bam
+control,/home/your-path/file_with_bam_extention.bam
+reference,/home/your-path/file_with_fasta_extention.fasta
+output_dir,/workl
