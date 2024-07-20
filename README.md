@@ -34,6 +34,22 @@ Now that you have installed Nextflow, it’s good practice to add it to your PAT
 `mv nextflow ~/bin/`
 
 
+### 4) Test data:
+
+Download the test data from the following link :
+
+https://sourceforge.net/projects/contra-cnv/files/Test%20files/
+
+
+| File | Size |
+
+| P0667N_GATKrealigned_duplicates_marked.bam |	566.5 MB |
+| P0667T_GATKrealigned_duplicates_marked.bam |	535.6 MB |
+| P0667T_GATKrealigned_duplicates_marked.bam.bai |	5.7 MB |
+| P0667N_GATKrealigned_duplicates_marked.bam.bai |	5.8 MB |
+| 0247401_D_BED_20090724_hg19_MERGED.bed |	250.9 kB |
+
+
 ## Usage:
 
 Now, you can run the pipeline using:
