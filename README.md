@@ -39,10 +39,15 @@ https://docs.docker.com/engine/install/
 Now, you can run the pipeline using:
 
 `sudo nextflow run ishamada/contranf -r main \`
+
 `--target /yourpath/test-data/0247401_D_BED_20090724_hg19_MERGED.bed \`
+
 `--sample /yourpath/contra-test-data/P0667T_GATKrealigned_duplicates_marked.bam \`
+
 `--control /yourpath/contra-test-data/P0667N_GATKrealigned_duplicates_marked.bam \`
+
 `--reference /yourpath/contra-test-data/human_g1k_v37.fasta \`
+
 `--output_dir results`
 
 ## Required parameters:
