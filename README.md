@@ -11,7 +11,7 @@ Before you run CONTRA Nextflow pipeline, you need to install Java,Docker and Nex
 
 First you will need to ensure that you have at least version 8 of java installed. You can check which version you have by typing the following on your command line:
 
-java -version
+`java -version`
 
 If you don’t have java installed or else need to update the version, installation instructions can be found here: https://www.java.com/en/download/help/linux_x64_install.html.
 
@@ -19,10 +19,11 @@ If you don’t have java installed or else need to update the version, installat
 
 If you have the correct version of java installed, you can use the following command to download and install Nextflow on your computer:
 
-curl -fsSL get.nextflow.io | bash
+`curl -fsSL get.nextflow.io | bash`
+
 Now that you have installed Nextflow, it’s good practice to add it to your PATH so you can call it from anywhere on your system:
 
-mv nextflow ~/bin/
+`mv nextflow ~/bin/`
 
 ### Install Docker
 
