@@ -32,13 +32,10 @@ You need to install Docker, depends on your operation system, check the followin
 https://docs.docker.com/engine/install/
 
 
-> blockquote goes here
-> second line
-> third line
-
 ## Usage:
 
 Now, you can run the pipeline using:
+```
 
 `sudo nextflow run ishamada/contranf -r main \`
 
@@ -51,6 +48,8 @@ Now, you can run the pipeline using:
 `--reference /yourpath/contra-test-data/human_g1k_v37.fasta \`
 
 `--output_dir results`
+
+```
 
 ## Required parameters:
 
