@@ -7,7 +7,7 @@ CONTRA-NF is a nextflow pipeline to run CONTRA tool for copy number variation (C
 
 Before you run CONTRA Nextflow pipeline, you need to install Java,Docker and Nextflow. 
 
-#### Install Java
+### Install Java
 
 First you will need to ensure that you have at least version 8 of java installed. You can check which version you have by typing the following on your command line:
 
@@ -15,7 +15,7 @@ java -version
 
 If you don’t have java installed or else need to update the version, installation instructions can be found here: https://www.java.com/en/download/help/linux_x64_install.html.
 
-#### Install Nextflow
+### Install Nextflow
 
 If you have the correct version of java installed, you can use the following command to download and install Nextflow on your computer:
 
@@ -24,7 +24,7 @@ Now that you have installed Nextflow, it’s good practice to add it to your PAT
 
 mv nextflow ~/bin/
 
-#### Install Docker
+### Install Docker
 
 You need to install Docker, depends on your operation system, check the following link:
 
