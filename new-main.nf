@@ -91,6 +91,8 @@ ch_target = Channel.fromPath(params.target)
 ch_sample = Channel.fromPath(params.sample)
 ch_control = Channel.fromPath(params.control)
 ch_reference = Channel.fromPath(params.reference)
+inputFiles = Channel.fromPath('samplesheet.csv')
+
 
 // VALIDATION process for samplesheet.csv file
 process VALIDATION {
@@ -147,12 +149,12 @@ process VALIDATION {
                     print(f"Invalid path for output_dir: {path}")
                     return False
             
-            print("The samplesheet.csv file is valid")
+            #print("The samplesheet.csv file is valid")
             return True
 
     # Example usage
     file_path = "$inputFile"
-    validate_csv(file_path)
+    val_res = validate_csv(file_path)
 
     """
 }
@@ -205,13 +207,12 @@ process CONTRA {
 */   
 
 workflow {
-    inputFiles = channel.fromPath('samplesheet.csv')
-    
-    VALIDATION(inputFiles)
-    VALIDATION.out.view()
+        
+    res = VALIDATION(inputFiles)
+    res.view { it }
     CONTRA(ch_target, ch_sample, ch_control, ch_reference)
 }
 
 workflow.onComplete {
-    log.info ( workflow.success ? "\nDone! Check the results of CONTRA > $params.output_dir/\n" : "Oops .. something went wrong" )
+    log.info(workflow.success ? "\nDone! Check the results of CONTRA > $params.output_dir/\n" : "Oops .. something went wrong" )
 }

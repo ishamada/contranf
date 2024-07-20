@@ -41,9 +41,10 @@ def validate_csv(file_path):
                 print(f"Invalid path for output_dir: {path}")
                 return False
         
-        print("CSV file is valid")
+        # print("CSV file is valid")
         return True
 
 # Example usage
-file_path = 'samplesheet.csv'
-validate_csv(file_path)
+file_path = '/home/islam/contranf/samplesheet.csv'
+func_res = validate_csv(file_path)
+print(func_res)
